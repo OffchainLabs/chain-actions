@@ -71,7 +71,7 @@ jobs:
             exit 1
           fi
 
-          if [ "$RELEASE_CHANNEL" = "release" ]; then
+          if [ "$RELEASE_CHANNEL" = "latest" ]; then
             echo "NPM_PACKAGE_VERSION=$BASE_VERSION" >> "$GITHUB_ENV"
             echo "NPM_DIST_TAG=latest" >> "$GITHUB_ENV"
           else
