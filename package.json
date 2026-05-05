@@ -1,7 +1,10 @@
 {
   "name": "@arbitrum/chain-actions",
   "version": "1.0.0-alpha.0",
-  "repository": "https://github.com/OffchainLabs/chain-actions.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OffchainLabs/arbitrum-chain-actions.git"
+  },
   "license": "Apache-2.0",
   "scripts": {
     "build:cli": "tsc -p tsconfig.cli.json",
