@@ -27,6 +27,7 @@ jobs:
   publish:
     name: Publish to npm
     runs-on: ubuntu-latest
+    environment: publish
     permissions:
       id-token: write
       contents: write
