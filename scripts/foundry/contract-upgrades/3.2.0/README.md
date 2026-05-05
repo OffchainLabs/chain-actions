@@ -43,7 +43,7 @@ Please refer to the top [README](/README.md#check-version-and-upgrade-path) `Che
 > The .env file must be in project root.
 
 2. (Skip this step if you can use the deployed instances of action contract)
-   `DeployNitroContracts3Point2Point0UpgradeActionScript.s.sol` script deploys templates, and upgrade action itself. It can be executed in this directory like this:
+   `DeployNitroContracts3Point2Point0UpgradeActionScript.s.sol` script deploys the upgrade action. It can be executed in this directory like this:
 
 ```bash
 forge script --sender $DEPLOYER --rpc-url $PARENT_CHAIN_RPC --broadcast --slow DeployNitroContracts3Point2Point0UpgradeActionScript -vvv --verify --skip-simulation
