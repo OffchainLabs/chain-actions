@@ -16,6 +16,8 @@ contract NitroContracts3Point2Point0UpgradeAction {
     address public immutable newRollupUserLogicImpl;
 
     constructor(address _newRollupAdminLogicImpl, address _newRollupUserLogicImpl) {
+        require(_newRollupAdminLogicImpl.code.length > 0, "invalid rollup admin logic impl");
+        require(_newRollupUserLogicImpl.code.length > 0, "invalid rollup user logic impl");
         newRollupAdminLogicImpl = _newRollupAdminLogicImpl;
         newRollupUserLogicImpl = _newRollupUserLogicImpl;
     }
